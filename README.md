@@ -6,7 +6,8 @@
 - Run the whole notebook to get the outputs for all questions
 - The sweep for hyperparameter sweeps is commented out by default. Uncomment the cell to run the sweep across the given dictionary
 
-
+## Part A
+To train the cnn, use /partA/Assignment_2.ipynb
 To train a custom convolutional neural network, edit the values in the following dictionary
 
 ```python
@@ -76,4 +77,43 @@ where :
   image -- (numpy array) image input for guided backpropogation (229 x 229)
   ```
   
+## Part B
+
+Use Assignment_2_B.ipynb
+
+To train a custom convolutional neural network, edit the values in the following dictionary
+
+```python
+config_defaults = {
+  "model_name" : "InceptionV3",
+  "fc_size" : 1024,
+  "augmentation" : 1,
+}
+```
+
+where :
+  ```
+  model_name -- (string) pretrained model name- ['InceptionV3','MobileNetV2','InceptionResNetV2','ResNet50','Xception']
+  fc_size -- (int) Fully connected layer size
+  augmentation -- (int) 0/1 to disable/ enable data augmentation
   
+  ```
+  
+Then, run 
+```python
+train()
+```
+The resulting model will be stored in wandb.
+
+To run a sweep, run
+
+```python
+sweeper(sweep_config,PROJECT_NAME)
+```
+
+where :
+  ```
+  sweep_config -- (dict) wandb sweep config dictionary
+  PROJECT_NAME -- (string) wandb project name
+  
+  ```
