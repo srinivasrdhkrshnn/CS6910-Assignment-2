@@ -117,3 +117,5 @@ where :
   PROJECT_NAME -- (string) wandb project name
   
   ```
+Link for WandB report: Part A: https://wandb.ai/cs6910krsrd/CS6910%20ASSIGNMENT%202/reports/CS6910-Assignment-2-Part-A---Vmlldzo2MTUwOTE
+                       Part B & C: https://wandb.ai/krsrinivas/CS6910%20ASSIGNMENT%202B/reports/CS6910-Assignment-2-Part-B-C---Vmlldzo2MTA4ODE
